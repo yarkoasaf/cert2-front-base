@@ -33,10 +33,15 @@ function CineForm({onCreateEntrada= (entrada) => {} }) {
 
     const [pelicula, setPelicula] = useState(null);
     // (Wifi Ralph, Dragon Ball Super Broly, Cascanueces, El Grinch)
-    const peliculas = ["Wifi Ralph", "Dragon Ball Super Broly", "Cascanueces", "El Grinch"];
+    const peliculas = [
+        { titulo: 'Wifi Ralph'},
+        { titulo: 'Dragon Ball Super Broly'},
+        { titulo: 'Cascanueces'},
+        { titulo: 'El Grinch'}
+    ];
 
     const handleClick = ()=>{
-        const entrada = {dia: dia, pago: pago, cantidad: cantidad, ciudad: ciudad, pelicula: pelicula};
+        const entrada = {dia: dia, pago: pago, cantidad: cantidad, ciudad: ciudad, pelicula: toString(pelicula)};
         onCreateEntrada(entrada);
     };
 
