@@ -3,6 +3,15 @@ import BaseToolbar from "../components/BaseToolbar"
 import Template from "../components/Template"
 import { Toast } from "primereact/toast"
 
+/* 
+dos formularios (comprar entradas y entradas compradas)
+
+dia, dropdown
+tipo de pago, selectbutton
+
+datatable (dia, pelicula, cantidad de entradas, valor a pagar)
+
+*/
 
 const AdminContainer = () => {
     const toast = useRef(null);
