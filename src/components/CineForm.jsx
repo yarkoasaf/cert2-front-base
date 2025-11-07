@@ -41,7 +41,7 @@ function CineForm({onCreateEntrada= (entrada) => {} }) {
     ];
 
     const handleClick = ()=>{
-        const entrada = {dia: dia, pago: pago, cantidad: cantidad, ciudad: ciudad, pelicula: toString(pelicula)};
+        const entrada = {dia: dia, pago: pago, cantidad: cantidad, ciudad: ciudad, pelicula: pelicula};
         onCreateEntrada(entrada);
     };
 
