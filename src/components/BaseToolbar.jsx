@@ -6,7 +6,7 @@ function BaseToolbar() {
     return (
         <div className="row">
             <Toolbar 
-                end={<h3>Base Cert2 front</h3>}>
+                start={<h1> Sansamark </h1>}>
             </Toolbar>
         </div>
     )
